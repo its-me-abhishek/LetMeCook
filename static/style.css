@@ -9,7 +9,7 @@
 
   .parallax {
     background-image: url("bg.png");
-    min-height: 750px;
+    min-height: 650px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -112,6 +112,7 @@
     justify-content: space-between;
     padding: 10px;
     z-index: 100;
+    margin-top: 0px;
   }
 
   .navbar-logo img {
@@ -143,31 +144,21 @@
   }
   
   .navbar-sidebar.open {
+    box-shadow: black;
     left: 0; /* Slide into view */
   }
   
   .navbar-sidebar a {
+    box-shadow: black;
     display: block;
+    align-content: center;
     margin-bottom: 10px;
     color: #fff;
     text-decoration: none;
   }
   
   .navbar-sidebar a:hover {
-    text-decoration: underline;
-  }
-  
-  .sidebar-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin-left: 10px;
-  }
-  
-  .sidebar-toggle img {
-    width: 40px; /* Adjust the width to fit your image */
-    margin-left: -80px;
+    text-decoration: none;
   }
 
   .navbar-about {
@@ -200,4 +191,7 @@
     color: #ff7900
   }
 
-  
+  .nav-buttons{
+    display: flex;
+    align-content: center;
+  }
