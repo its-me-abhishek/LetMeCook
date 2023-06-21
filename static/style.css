@@ -1,0 +1,159 @@
+  @font-face {
+    font-family: bodyFont;
+    src: url(ComicSansMS3.ttf);
+  }
+
+  body {
+    background-color: #f4e3bb;
+  }
+
+  .parallax {
+    background-image: url("bg.png");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    font-family: bodyFont;
+    opacity: 85%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #cbe2b5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #ff7900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  button:hover {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ff7900;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  #resultsContainer {
+    text-align: center;
+  }
+
+  .recipe {
+    margin-bottom: 20px;
+  }
+
+  .recipe h3 {
+    margin-top: 0;
+  }
+
+  .recipe img {
+    width: 200px;
+    height: auto;
+    border-radius: 500px;
+    margin-bottom: 10px;
+  }
+
+  .recipe p {
+    margin-bottom: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    background-color: #cbe2b5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .navbar-logo img {
+    width: 50px;
+  }
+
+  .navbar-center img {
+    width: 150px;
+  }
+
+  .navbar-right {
+    margin-right: 10px;
+  }
+
+  .navbar-about {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a {
+    color: #fff
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #ff7900;
+  }
+
+  a:focus {
+    text-decoration: none;
+    color: #ff7900;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: #ff7900
+  }
+
+  

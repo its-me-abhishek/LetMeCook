@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Let Me Cook</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='navbar.css') }}">
+</head>
+
+<body>
+    <div class="parallax">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            </div>
+            <div class="navbar-center">
+                <img src="{{ url_for('static', filename='image.png') }}" alt="Image">
+            </div>
+            <div class="navbar-right">
+                <a href="{{url_for('github')}}" style="text-decoration: none">
+                    <button>
+                        Github
+                    </button>
+                </a>
+                <a href="{{url_for('about')}}" style="text-decoration: none">
+                    <button>
+                        About
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="container">
+            <h1>Let's create a recipe!</h1>
+            <div class="form">
+                <input type="text" id="ingredientInput" placeholder="Enter an ingredient or a list of ingredients">
+                <button id="searchButton">Search</button>
+            </div>
+            <div id="resultsContainer"></div>
+            <hr>
+            <div>
+                (Made using Edamam API)
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
