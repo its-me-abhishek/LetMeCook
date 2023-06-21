@@ -9,7 +9,7 @@
 
   .parallax {
     background-image: url("bg.png");
-    min-height: 600px;
+    min-height: 750px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   h1 {
@@ -115,15 +115,59 @@
   }
 
   .navbar-logo img {
-    width: 50px;
+    width: 75px;
+    height: auto;
+    margin-left: 35px;
   }
 
   .navbar-center img {
-    width: 150px;
+    width: 200px;
+    height: auto;
+    margin-left: -35px;
   }
 
   .navbar-right {
     margin-right: 10px;
+  }
+
+  .navbar-sidebar {
+    position: fixed;
+    top: 0;
+    left: -340px; /* Start offscreen */
+    width: 300px;
+    height: 100vh;
+    background-color: #cbe2b5;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 200;
+  }
+  
+  .navbar-sidebar.open {
+    left: 0; /* Slide into view */
+  }
+  
+  .navbar-sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-sidebar a:hover {
+    text-decoration: underline;
+  }
+  
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+  }
+  
+  .sidebar-toggle img {
+    width: 40px; /* Adjust the width to fit your image */
+    margin-left: -80px;
   }
 
   .navbar-about {
