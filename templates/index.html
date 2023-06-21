@@ -20,19 +20,16 @@
                 <img src="{{ url_for('static', filename='image.png') }}" alt="Image">
             </div>
             <div class="navbar-right">
-                <a href="{{url_for('github')}}" style="text-decoration: none">
-                    <button>
-                        Github
-                    </button>
-                </a>
-                <a href="{{url_for('about')}}" style="text-decoration: none">
-                    <button>
-                        About
-                    </button>&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
+                <button id="sidebarToggle" class="sidebar-toggle">
+                    <img src="{{ url_for('static', filename='sidebar-button.png') }}" alt="Sidebar Button">
+                </button>
             </div>
         </div>
-        <br><br><br><br><br>
+        <div class="navbar-sidebar" id="sidebar">
+            <a href="#">Home</a>
+            <a href="#">Recipes</a>
+            <a href="#">About</a>
+        </div>
         <div class="container">
             <h1>Let's create a recipe!</h1>
             <div class="form">
