@@ -22,10 +22,10 @@
 
             <div>
                 <a style="text-decoration: none">
-                  <button id="sidebarToggle" onclick="toggleSidebar()">
-                    Menu
-                  </button>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="sidebarToggle" onclick="toggleSidebar()">
+                        Menu
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                 </a>
             </div>
         </div>
@@ -51,19 +51,106 @@
         <br>
         <br>
         <div class="about-container">
-          <h1>LET ME COOK</h1>
-          <P>Welcome to "Let Me Cook" - your ultimate destination for recipe recommendations and culinary inspiration! Whether you're a seasoned home chef or just starting your journey in the kitchen, we're here to help you discover delightful dishes that will tantalize your taste buds and ignite your passion for cooking.</P>
-          <P>At Let Me Cook, we understand the joy of preparing a delicious meal that brings people together. Food has the remarkable ability to create memorable experiences and forge meaningful connections. That's why our mission is to empower you with a vast collection of recipes, cooking tips, and personalized recommendations, ensuring that every meal you prepare becomes a culinary masterpiece.</P>
-          <p>“Let Me Cook” uses <a href="https://www.edamam.com/" target="_blank" rel="noopener noreferrer">Edamam API</a> which provides the database linked with the food items. It provides a wide variety of dishes for a particular ingredient(s) with a collection of Indian as well as western cuisines. The main purpose of this website is to provide a solution to the problem of chefs, individuals, and hotel owners of selecting the dishes for the preparation of the meals.</p>
-          <P>The website has been created using HTML, CSS, Python and Javascript along with the Python Flask framework. The interface of the website is quite user friendly which makes it very interactive and easy to use and the user can get recipe recommendations by searching for various ingredient(s) they have with them. The recipe recommendations consist of ingredients based on the user input as well as some other easily available ingredients.</P>
-          <hr>
+            <h1>LET ME COOK</h1>
+            <P>Welcome to "Let Me Cook" - your ultimate destination for recipe recommendations and culinary inspiration!
+                Whether you're a seasoned home chef or just starting your journey in the kitchen, we're here to help you
+                discover delightful dishes that will tantalize your taste buds and ignite your passion for cooking.</P>
+            <P>At Let Me Cook, we understand the joy of preparing a delicious meal that brings people together. Food has
+                the remarkable ability to create memorable experiences and forge meaningful connections. That's why our
+                mission is to empower you with a vast collection of recipes, cooking tips, and personalized
+                recommendations, ensuring that every meal you prepare becomes a culinary masterpiece.</P>
+            <p>“Let Me Cook” uses <a href="https://www.edamam.com/" target="_blank" rel="noopener noreferrer">Edamam
+                    API</a> which provides the database linked with the food items. It provides a wide variety of dishes
+                for a particular ingredient(s) with a collection of Indian as well as western cuisines. The main purpose
+                of this website is to provide a solution to the problem of chefs, individuals, and hotel owners of
+                selecting the dishes for the preparation of the meals.</p>
+            <P>The website has been created using HTML, CSS, Python and Javascript along with the Python Flask
+                framework. The interface of the website is quite user friendly which makes it very interactive and easy
+                to use and the user can get recipe recommendations by searching for various ingredient(s) they have with
+                them. The recipe recommendations consist of ingredients based on the user input as well as some other
+                easily available ingredients.</P>
+            <hr>
             <div>
                 (Made using Edamam API)
             </div>
         </div>
         <div class="about-container">
-          <h1>OUR TEAM</h1>
-          <hr>
+            <h1>OUR TEAM</h1>
+            <hr>
+            <h3>
+                Frontend and Backend
+            </h3>
+            <p>
+                Abhishek
+                <a href="{{ git_ak }}" target="_blank"  style="text-decoration: none">
+                    <button>
+                        Github
+                    </button>
+                </a>
+                <a href="{{ li_ak }}" target="_blank"  style="text-decoration: none">
+                <button>
+                    Linkedin
+                </button>
+                </a>
+                <a href="mailto:{{ em_ak }}" target="_blank"  style="text-decoration: none">
+                <button>
+                    E-Mail
+                </button>
+                </a>
+            </p>
+            <hr>
+
+            <h3>
+                UI/UX and Frontend
+            </h3>
+            <p>
+                Abhijit Shukla
+                <a href="{{ git_as }}" target="_blank"  style="text-decoration: none">
+                  <button>
+                      Github
+                  </button>
+              </a>
+              <a href="{{ li_as }}" target="_blank"  style="text-decoration: none">
+              <button>
+                  Linkedin
+              </button>
+              </a>
+              <a href="mailto:{{ em_as }}" target="_blank"  style="text-decoration: none">
+              <button>
+                  E-Mail
+              </button>
+              </a>
+            </p>
+            <hr>
+            <h3>
+                Technical Content
+            </h3>
+            <p>
+                Aditya Raina
+              <a href="{{ li_ar }}" target="_blank"  style="text-decoration: none">
+                <button>
+                    Linkedin
+                </button>
+                </a>
+                <a href="mailto:{{ em_ar }}" target="_blank"  style="text-decoration: none">
+                <button>
+                    E-Mail
+                </button>
+                </a>
+            <p>
+                Ankit Kumar
+              <a href="{{ li_at }}" target="_blank"  style="text-decoration: none">
+              <button>
+                  Linkedin
+              </button>
+              </a>
+              <a href="mailto:{{ em_at }}" target="_blank"  style="text-decoration: none">
+              <button>
+                  E-Mail
+              </button>
+              </a>
+            </p>
+            <hr>
             <div>
                 (Made using Edamam API)
             </div>
@@ -71,56 +158,56 @@
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <script>
-        document.getElementById('searchButton').addEventListener('click', function() {
-          var ingredient = document.getElementById('ingredientInput').value;
-          var xhr = new XMLHttpRequest();
-          xhr.open('POST', '/search', true);
-          xhr.setRequestHeader('Content-Type', 'application/json');
-          xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-              var response = JSON.parse(xhr.responseText);
-              displayRecipes(response.recipes);
-            }
-          };
-          xhr.send(JSON.stringify({ ingredient: ingredient }));
+        document.getElementById('searchButton').addEventListener('click', function () {
+            var ingredient = document.getElementById('ingredientInput').value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/search', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    displayRecipes(response.recipes);
+                }
+            };
+            xhr.send(JSON.stringify({ ingredient: ingredient }));
         });
 
         function displayRecipes(recipes) {
-          var resultsContainer = document.getElementById('resultsContainer');
-          resultsContainer.innerHTML = '';
-          if (recipes.length > 0) {
-              for (var i = 0; i < recipes.length; i++) {
-                  var recipe = recipes[i].recipe;
-                  var recipeDiv = document.createElement('div');
-                  recipeDiv.className = 'recipe';
-                  var title = document.createElement('h3');
-                  title.textContent = recipe.label;
-                  recipeDiv.appendChild(title);
-                  var image = document.createElement('img');
-                  image.src = recipe.image;
-                  recipeDiv.appendChild(image);
-                  var ingredients = document.createElement('p');
-                  ingredients.textContent = 'Ingredients: ' + recipe.ingredientLines.join(', ');
-                  recipeDiv.appendChild(ingredients);
-                  resultsContainer.appendChild(recipeDiv);
-              }
-          } 
-          else {
-              var noRecipes = document.createElement('p');
-              noRecipes.textContent = 'No recipes found.';
-              resultsContainer.appendChild(noRecipes);
-          }
+            var resultsContainer = document.getElementById('resultsContainer');
+            resultsContainer.innerHTML = '';
+            if (recipes.length > 0) {
+                for (var i = 0; i < recipes.length; i++) {
+                    var recipe = recipes[i].recipe;
+                    var recipeDiv = document.createElement('div');
+                    recipeDiv.className = 'recipe';
+                    var title = document.createElement('h3');
+                    title.textContent = recipe.label;
+                    recipeDiv.appendChild(title);
+                    var image = document.createElement('img');
+                    image.src = recipe.image;
+                    recipeDiv.appendChild(image);
+                    var ingredients = document.createElement('p');
+                    ingredients.textContent = 'Ingredients: ' + recipe.ingredientLines.join(', ');
+                    recipeDiv.appendChild(ingredients);
+                    resultsContainer.appendChild(recipeDiv);
+                }
+            }
+            else {
+                var noRecipes = document.createElement('p');
+                noRecipes.textContent = 'No recipes found.';
+                resultsContainer.appendChild(noRecipes);
+            }
         }
 
-        document.getElementById('sidebarToggle').addEventListener('click', function() {
-          document.getElementById('sidebar').classList.toggle('open');
+        document.getElementById('sidebarToggle').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('open');
         });
 
-        document.getElementById('sidebarClose').addEventListener('click', function() {
-          document.getElementById('sidebar').classList.remove('open');
+        document.getElementById('sidebarClose').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.remove('open');
         });
         function toggleSidebar() {
-        document.getElementById('sidebar').classList.toggle('open');
+            document.getElementById('sidebar').classList.toggle('open');
         }
 
     </script>
