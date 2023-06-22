@@ -195,3 +195,16 @@
     display: flex;
     align-content: center;
   }
+
+  .about-container {
+    font-family: bodyFont;
+    opacity: 85%;
+    max-width: 1300px;
+    margin: 50px auto;
+    background-color: #cbe2b5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 50px;
+  }
