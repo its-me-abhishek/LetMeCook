@@ -36,8 +36,8 @@ def search():
     ingredient = data['ingredient']
     
     #API info
-    app_id = 'b4cc4ff4'
-    app_key = '208a15bc89f8e6cdd13872f6dbbc4c44'
+    app_id = 'APP_ID'
+    app_key = 'APP_KEY'
     url = f'https://api.edamam.com/search?q={ingredient}&app_id={app_id}&app_key={app_key}'
     
     #Response
