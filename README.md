@@ -35,6 +35,21 @@ http://localhost:5000
 # Use the app ✨
 To use the LetMeCook app, you can go to the URL http://localhost:5000 in your web browser. You will then be presented with a form where you can enter the ingredients you have in your kitchen 🍳. Once you have entered the ingredients, click the "Search" button 🔎. The app will then return a list of recipes that you can make with the ingredients you have entered 📝.
 
+# Screenshots 📷
+## Home Page 🏠
+![HOME](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/7a80e1cb-5e8a-4d3d-ac21-09a8b6f97d51)
+## About Page ℹ️
+![ABOUT](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/8aa274ba-34ec-4f3a-bd95-1b5de0438a43)
+## Output 📊
+![o1](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/2bf96169-0d74-4238-8f50-ef811d7c1223)
+![o2](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/2a91dbbe-53d1-4fcf-ab27-78ffa8f8321f)
+![o3](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/01472eb6-2d4f-41fc-97ee-dfbf3202d66d)
+![o4](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/5a029dd1-70bc-49f7-b3f1-7dd6bdc25c68)
+![o5](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/2275b1d4-cbf2-4f1e-b313-ac01ddaa69f5)
+![o6](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/720c59a9-b401-48fd-9fd8-ee7de401eea8)
+![o7](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/bc7d2ded-7e89-46cf-9efa-fc04582fc460)
+![o8](https://github.com/its-me-abhishek/LetMeCook/assets/114338679/69e036d5-09c2-47f1-a9ac-ee484e438ec1)
+
 # Contributing 🤝
 If you would like to contribute to the LetMeCook project, you can do so by following these steps:
 
