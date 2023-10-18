@@ -30,7 +30,7 @@ To run the LetMeCook app, you will need to have Python 3 and Flask installed and
 
 The app will then be available on your local machine at the following URL:
 
-http://localhost:5000
+```http://localhost:5000```
 
 # Use the app ✨
 To use the LetMeCook app, you can go to the URL http://localhost:5000 in your web browser. You will then be presented with a form where you can enter the ingredients you have in your kitchen 🍳. Once you have entered the ingredients, click the "Search" button 🔎. The app will then return a list of recipes that you can make with the ingredients you have entered 📝.
